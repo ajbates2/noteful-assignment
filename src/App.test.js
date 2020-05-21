@@ -6,7 +6,9 @@ import App from './App';
 it('renders without crashing', () => {
   const div = document.createElement('div');
   ReactDOM.render(
-      <App />,
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
      div);
   ReactDOM.unmountComponentAtNode(div);
 });

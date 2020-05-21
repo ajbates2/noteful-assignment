@@ -1,0 +1,36 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.note-box {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.folder-box {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    width: inherit;
+    display: block;
+}
+
+.folder-list {
+    border: 1px solid black;
+    width: 500px;
+}
+
+.active {
+    background-color: cadetblue;
+}
