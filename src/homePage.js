@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import FolderList from './folderList'
-import NoteList from './noteList';
+import FolderList from './FolderList/folderList'
+import NoteList from './NoteList/noteList';
+import NoteContext from './noteContext'
 
-class HomePage extends Component {
+class HomePage extends Component {  
+    static contextType = NoteContext
     render() {
         return (
             <>
-                
                 <FolderList />
-                <NoteList />
+                <NoteList notes={this.context.notes}/>
             </>
         )
     }

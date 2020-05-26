@@ -7,10 +7,9 @@ a:hover {
     cursor: pointer;
 }
 
-ul {
+ul, li {
     list-style: none;
 }
-
 
 .note-box {
     border: 1px solid black;
@@ -22,13 +21,11 @@ ul {
     border: 1px solid black;
     padding: 5px;
     margin: 5px;
-    width: inherit;
     display: block;
 }
 
 .folder-list {
-    border: 1px solid black;
-    width: 500px;
+    width: fit-content;
 }
 
 .active {
