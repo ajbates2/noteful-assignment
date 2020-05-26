@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import Note from '../Note/note';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 class NoteList extends Component {
-    static defaultProps = {
-        notes: []
-    }
-    
+
     render() {
         return (
             <section>
@@ -30,3 +28,7 @@ class NoteList extends Component {
 }
 
 export default NoteList
+
+NoteList.propTypes = {
+    notes: PropTypes.arrayOf(PropTypes.object)
+}

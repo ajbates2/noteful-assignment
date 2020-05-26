@@ -57,22 +57,21 @@ class App extends Component {
       });
   }
 
-render() {
-  const contextValue = {
-    folders: this.state.folders,
-    notes: this.state.notes,
-    deleteNote: this.deleteNote,
-    handleAddFolder: this.handleAddFolder,
-    handleAddNote: this.handleAddNote,
-  }
-  return (
-    <div className="App">
-      <header>
-        <Link to='/'>
-          <h1>Noteful</h1>
-        </Link>
-      </header>
-      <main className="main-container">
+  render() {
+    const contextValue = {
+      folders: this.state.folders,
+      notes: this.state.notes,
+      deleteNote: this.deleteNote,
+      handleAddFolder: this.handleAddFolder,
+      handleAddNote: this.handleAddNote,
+    }
+    return (
+      <div className="App">
+        <header>
+          <Link to='/'>
+            <h1>Noteful</h1>
+          </Link>
+        </header>
         <NoteContext.Provider value={contextValue}>
           <Route exact path='/' component={HomePage} />
           <Route path='/folder/:folderId' component={FolderPage} />
@@ -80,10 +79,9 @@ render() {
           <Route path='/AddNote' component={AddNote} />
           <Route path='/AddFolder' component={AddFolder} />
         </NoteContext.Provider>
-      </main>
-    </div>
-  );
-}
+      </div>
+    );
+  }
 }
 
 export default App;

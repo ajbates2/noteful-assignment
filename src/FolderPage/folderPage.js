@@ -11,7 +11,7 @@ class FolderPage extends Component {
         )
         return (
             <>
-                <FolderList  />
+                <FolderList />
                 <NoteList notes={filteredNotes}/>
             </>
         )

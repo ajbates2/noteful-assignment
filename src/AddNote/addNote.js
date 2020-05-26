@@ -52,6 +52,7 @@ class AddNote extends Component {
                         type="text"
                         id="noteName"
                         name="noteName"
+                        required
                     />
                 </div>
                 <div className="field">
@@ -59,6 +60,7 @@ class AddNote extends Component {
                     <textarea
                         id="noteContent"
                         name="noteContent"
+                        required
                         />
                 </div>
                 <div className="field">
@@ -66,8 +68,8 @@ class AddNote extends Component {
                     <select
                         id="noteFolder"
                         name="noteFolder"
+                        required
                         >
-                        <option value={null}>...</option>
                         {this.context.folders.map(folder =>
                             <option key={folder.id} value={folder.id}>
                                 {folder.name}

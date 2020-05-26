@@ -45,7 +45,8 @@ class AddFolder extends Component {
                     <input
                         type="text"
                         id="folderName"
-                        name="folderName" />
+                        name="folderName"
+                        required />
                 </div>
                 <div className="buttons">
                     <button type="submit">Add folder</button>
